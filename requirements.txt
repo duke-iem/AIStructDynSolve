@@ -1,0 +1,8 @@
+pytorch
+matplotlib
+numpy
+scikit-optimize
+scipy
+pandas
+openpyxl
+
