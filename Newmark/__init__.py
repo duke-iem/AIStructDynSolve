@@ -1,0 +1,23 @@
+"""
+AIStructDynSolve
+A framework focused on solving structural dynamics problems using artificial intelligence (AI) methods
+solve the following ODE of MDOF
+M*U_dotdot+C*U_dot+K*U=Pt
+initial condition: U(t=0)=InitialU, and U_dot(t=0)=InitialU_dot
+Author: 杜轲 duke@iem.ac.cn
+Date: 2023/12/26
+"""
+
+__all__ = [
+    "NewmarkIntegrator_EQ",
+    "NewmarkIntegrator_EQ2D",
+    "NewmarkIntegrator_EQ3D",
+    "NewmarkIntegrator_Pt",
+    "NewmarkIntegrator_PtFunc",
+]
+
+from .NewmarkIntegrator_EQ import NewmarkIntegrator_EQ
+from .NewmarkIntegrator_EQ2D import NewmarkIntegrator_EQ2D
+from .NewmarkIntegrator_EQ3D import NewmarkIntegrator_EQ3D
+from .NewmarkIntegrator_Pt import NewmarkIntegrator_Pt
+from .NewmarkIntegrator_PtFunc import NewmarkIntegrator_PtFunc
